@@ -1,6 +1,6 @@
 package assignment2;
 
-public class Person implements Payable {
+public abstract class Person implements Comparable<Person> {
     private static int nextId = 1;
     private final int id;
     private String name;
@@ -47,5 +47,8 @@ public class Person implements Payable {
     }
     public double getPaymentAmount() {
         return 0.0;
+    }
+    public int compareTo(Person other) {
+        return Double.compare(this.getPaymentAmount(), other.getPaymentAmount());
     }
 }
