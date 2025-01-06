@@ -6,10 +6,10 @@ import java.util.Collections;
 public class MyApplication {
     public static void main(String[] args) {
         ArrayList<Person> people = new ArrayList<>();
-        people.add(new Employee("John", "Lennon", "Manager", 27045.78));
-        people.add(new Employee("George", "Harrison", "Developer", 50000.00));
-        people.add(new Student("Ringo", "Starr", 2.5));
-        people.add(new Student("Paul", "McCartney", 3.5));
+        people.add(new Employee("John", "Lennon", "Assistant", 27045.78));
+        people.add(new Employee("George", "Harrison", "Professor", 50000.00));
+        people.add(new Student("Ringo", "Starr", 2.35));
+        people.add(new Student("Paul", "McCartney", 3.89));
         Collections.sort(people);
         printData(people);
     }
